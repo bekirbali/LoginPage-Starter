@@ -1,73 +1,111 @@
 * {
-  /** universal secici 
-    ** tum html elemanlarinin margin ve padding'lerini sifirla*/
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  background-image: url(./img/clouds.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
-  background-color: aquamarine;
-  /** Ana div'e her yonden 10px dis uzaklik verdik */
-  margin: 10px;
-
-  /** Ana divin ic hacmini her yonden 20px genislettik */
-  padding: 20px;
-
-  /* text-align: center; */
-  /*! Bir blok element icerinde inline elementler var ise bunlar text-align ile hizalanabilir. Blok element icerisindeki blok elementler text align ile hizalanamaz. */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 25px; */
+  padding: 10px;
+  border-radius: 10px;
 }
-.div {
-  background-color: antiquewhite;
+.userName label {
+  margin-top: 10px;
+  display: inline-block;
+  width: 95px;
+}
 
-  padding: 20px;
-  /* width: 50%; */
-  width: 100px;
+.userName input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 150px;
+}
+.pass input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 150px;
+}
+.sec input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 150px;
+}
+
+.pass label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 95px;
+}
+
+.sec label {
+  display: inline-block;
+  width: 95px;
+}
+
+.buttons {
   text-align: center;
-
-  /*? div gibi blok elementler margin:auto ile ortalanabilr. */
-  margin: 20px auto;
-  /* margin-bottom: 10px;
-    margin-top: 20px; */
-
-  border: 10px solid rebeccapurple;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-hr {
-  margin: 30px 10px;
-  /* height: 20px; */
-}
-
-.menu {
-  text-align: center;
-  background-color: blueviolet;
-}
-.menu h2 {
+.buttons input {
+  width: 55px;
   background-color: black;
   color: #fff;
-  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: ease-in-out 0.3s;
 }
 
-.menu ul li {
-  width: 100px;
-  text-align: center;
-  display: inline-block;
-  padding: 14px;
-  border-radius: 15px;
-  margin-right: 24px;
-  border: 2px solid yellow;
-  transition: all ease-in 0.3s;
-  font-weight: 300;
-  margin-bottom: 5px;
+.buttons input:hover {
+  width: 75px;
+  background-color: #fff;
+  border: none;
+  color: black;
+  font-weight: 500;
 }
-.menu ul {
+
+form {
+  width: 55vw;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(148, 177, 233, 1) 0%,
+    rgba(209, 174, 238, 0.8211659663865546) 100%
+  );
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  border-radius: 20px;
 }
 
-.menu ul li:hover {
-  background-color: yellow;
-  outline: 2px solid darkblue;
-  color: darkblue;
-  font-weight: 900;
-  opacity: 1;
+.login {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.login h1 {
+  font-size: 25px;
 }

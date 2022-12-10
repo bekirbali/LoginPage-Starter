@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(clouds.png);
+  /* background-position: center; */
+  background-position-y: -80px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  margin-top: -55px;
+}
+
+.login h1 {
+  font-size: 2.5em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: -19px;
+}
+
+form {
+  width: fit-content;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgb(209, 174, 238);
+  background: linear-gradient(
+    306deg,
+    rgba(209, 174, 238, 0.8211659663865546) 0%,
+    rgba(46, 78, 189, 1) 59%
+  );
+  display: inline-block;
+  text-align: center;
+}
+
+form label {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+form input {
+  padding: 5px;
+  width: 170px;
+  border-radius: 8px;
+  font-size: 25px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  width: 85px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: blueviolet;
+  transition: ease-in-out 0.5s;
+}
+
+.button:hover {
+  background-color: rgb(190, 135, 241);
+  color: black;
+  font-weight: 500;
+}
